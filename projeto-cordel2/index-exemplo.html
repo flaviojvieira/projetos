@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cordel Moderno</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-paper: #f5f1e8;
+      --dark: #111;
+      --light: #fff;
+      --overlay: rgba(0,0,0,.45);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-paper);
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+
+    /* MENU */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15,15,15,.9);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    header {
+      height: 100vh;
+      background: 
+        linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Passion One', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      letter-spacing: 4px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    /* SEÇÕES */
+    section {
+      padding: 80px 30px;
+      font-family: 'Sriracha', cursive;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      line-height: 2em;
+    }
+
+    section.paper {
+      background: var(--bg-paper);
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* TRADIÇÃO & MODERNIDADE */
+    .duo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .duo div {
+      background: #fff;
+      padding: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+    .duo img {
+      width: 100%;
+      display: block;
+    }
+
+    .duo p {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    /* POESIA COM IMAGEM */
+    .imagem {
+      background:
+        linear-gradient(to bottom, var(--overlay), var(--overlay)),
+        url("https://images.unsplash.com/photo-1502082553048-f009c37129b9");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    .imagem p {
+      max-width: 700px;
+      background: rgba(0,0,0,.5);
+      padding: 25px;
+      border-radius: 6px;
+    }
+
+    /* AUTOR */
+    .autor {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .autor img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.3);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: .9rem;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      .autor {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      nav {
+        gap: 15px;
+        font-size: .9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#inicio">Início</a>
+  <a href="#tradicao">Tradição</a>
+  <a href="#poesia">Poesia</a>
+  <a href="#autor">Autor</a>
+</nav>
+
+<header id="inicio">
+  <h1>CORDEL MODERNO</h1>
+  <p>Por Milton Duarte</p>
+</header>
+
+<section class="paper" id="tradicao">
+  <h2 style="text-align:center; font-family:'Passion One', sans-serif;">
+    Tradição & Modernidade
+  </h2>
+
+  <div class="duo">
+    <div>
+      <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" alt="">
+      <p>Do bilhete escrito à mão à poesia impressa.</p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+      <p>Do papel ao toque digital da tela.</p>
+    </div>
+  </div>
+</section>
+
+<section class="imagem" id="poesia">
+  <p>
+    Estou ficando cansado<br>
+    Da tal tecnologia<br>
+    Só se fala por e-mail<br>
+    Mensagem curta e fria<br>
+    Twitter e Facebook<br>
+    Antes que eu caduque<br>
+    Vou dizer tudo em poesia.
+  </p>
+</section>
+
+<section class="paper autor" id="autor">
+  <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Autor">
+  <p>
+    Milton Duarte é um poeta brasileiro que une o cordel tradicional
+    com reflexões sobre a modernidade, tecnologia e comportamento humano.
+  </p>
+</section>
+
+<footer>
+  <p>
+    Site criado por <a href="#">Flávio Vieira</a> • HTML & CSS
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'idroid';
+    src: url('fonte-idroid.otf') format('opentype');
+}
+
+body {
+    background-color: #B8BA99;
+    margin: 0;    
+}
+
+header > section {
+    padding: 10px;
+    background-image: linear-gradient(to top, #383B13, #B8BA99);
+    color: white;       
+}
+
+#titulo-principal {
+    font-family: bebas neue, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px black;     
+}
+
+#paragrafo-menu {
+    text-align: center; 
+    color: rgba(255, 255, 255, 0.568);
+    text-shadow: 1px 1px 2px black; 
+    margin: 20px 0px;
+}
+
+nav > a {
+    color: white;
+    
+    text-decoration: none;     
+    padding: 5px;  
+}
+
+nav > a:hover {
+    background-color: #B8BA99;
+    color: #383B13;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none; 
+    color: #104d86;
+}
+
+a:hover {
+    color: #5E7890;
+    text-decoration: underline;
+}
+
+#titulo {
+    font-family: 'idroid', 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #3B1513;
+}
+main {
+    background-color: white;
+    padding: 10px;    
+    width: 84%;
+    margin: auto;  
+    border-radius: 0 0 5px 5px;  
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}
+
+main > section > h2 {
+    font-family: 'idroid', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #13283B;
+    background-image: linear-gradient(to right,#B8BA99, white);
+    padding-left: 5px;
+}
+
+article a::after {
+    content:' 🔗';
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+iframe {
+    border: 20px solid #383B13;    
+}
+
+aside {
+    background-color: #b7b8ad;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+#sessao-complementar {
+    color: white;
+    background-color: #747560;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#listas {
+    display: flex;    
+}
+
+#lista1, #lista2 {
+    list-style: none;
+}
+
+li::before {
+    content: "✔︎ ";
+}
+
+
+footer {
+    background-color: #383B13;
+    color: white;    
+}
+
+footer > p {
+    text-align: center;
+    padding: 2px;
+}
+
+em {
+    color: rgba(255, 255, 255, 0.616);
+}
