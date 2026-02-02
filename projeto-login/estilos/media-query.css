@@ -15,12 +15,12 @@ Telas grandes - 1367px em diante*/
 
     section#login {
         width: 80vw; 
-        height: 60vh;       
+        height: 330px;       
     }
 
     div#imagem {
         float: left;
-        width: 30%;
+        width: 35%;
         height: 100%;
     }
 
@@ -30,7 +30,8 @@ Telas grandes - 1367px em diante*/
     }
 
      div#formulario p {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 10px 0px;
     }
 }
 
@@ -42,7 +43,7 @@ Telas grandes - 1367px em diante*/
 
     section#login {
         width: 950px;   
-        height: 60vh;     
+        height: 310px;     
     }
 
     div#imagem {
@@ -61,7 +62,7 @@ Telas grandes - 1367px em diante*/
     }
 
     div#formulario p {
-        font-size: 1.2em;
-    }
-  
+        font-size: 1em;
+        margin: 10px 0px;
+    }    
 }
