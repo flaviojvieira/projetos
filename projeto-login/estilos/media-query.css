@@ -42,13 +42,13 @@ Telas grandes - 1367px em diante*/
     }
 
     div#imagem {
-        float: left;
+        float: right;
         width: 40%;
         height: 100%;
     }
 
     div#formulario {
-        float: right;
+        float: left;
         width: 60%;
     }
 }
