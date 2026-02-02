@@ -1,0 +1,54 @@
+@charset "UTF-";
+
+/* Typical Device Breakpoints  - pesquisa no Google em 01/02/2026
+Telas pequenas - até 480px
+Celular - 481 a 767px
+Tablet - 768px a 1024px
+Desktop - 1025px a 1366px 
+Telas grandes - 1367px em diante*/
+
+/* versaão tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: linear-gradient(to top,  #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw; 
+        height: 45vh;       
+    }
+
+    div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    div#formulario {
+        float: right;
+        width: 65%;
+    }
+}
+
+/* versão descktop */
+@media screen and (min-width: 1025px) {
+    body {
+        background-image: linear-gradient(to top,  #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 950px;   
+        height: 45%;     
+    }
+
+    div#imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    div#formulario {
+        float: right;
+        width: 60%;
+    }
+}
